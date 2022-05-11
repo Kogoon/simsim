@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
 		<meta charset="UTF-8">
     <title>점심뭐먹지?</title>
@@ -10,6 +10,10 @@
 			<h1>오늘 점심 뭐 먹지?</h1>
 			<p> {{ lunch_menu }}</p>
 			<a href="{{ url_for('lunch') }}"><button>다시하기</button></a>
+
+			{% for menu in lunch_menus %}
+			<li>{{ menu }}</li>
+			{% endfor %}
 		<div>
   </body>
 </html>
