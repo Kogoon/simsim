@@ -10,3 +10,9 @@ p {
 .lunch_center {
 	margin: 0, auto;
 }
+
+/* Rounded border */
+hr.rounded {
+	border-top: 8px solid #bbb;
+	border-radius: 5px;
+  }
